@@ -1281,8 +1281,12 @@ declare module "noblox.js" {
      * 
      * NOTE: Updating `name` will affect `description`: you must repeat `description` with each `name` update, or `description` will be cleared.
      */
-    
     function configureGamePass(gamePassId: number, name: string, description?: string, price?: number | boolean, icon?: string | stream.Stream, jar?: CookieJar): Promise<GamePassResponse>;
+
+    /**
+     * Converts a `placeId` to its corresponding `universeId`, a parameter often required by other game methods.
+     */
+    function getUniverseId(placeId: number): Promise<number>;
 
     /// Group
 
