@@ -1284,7 +1284,7 @@ declare module "noblox.js" {
     function configureGamePass(gamePassId: number, name: string, description?: string, price?: number | boolean, icon?: string | stream.Stream, jar?: CookieJar): Promise<GamePassResponse>;
 
     /**
-     * Converts a `placeId` to its corresponding `universeId`, a parameter often required by other game methods.
+     * Gets the `universeId` of a given `placeId` and caches according to settings.
      */
     function getUniverseId(placeId: number): Promise<number>;
 

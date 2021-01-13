@@ -98,6 +98,12 @@
       "expire": false,
       "refresh": false,
       "desc": "Caches rank by user ID. Changes cannot be anticipated so this is not enabled by default."
+     },
+
+     "UniverseFromPlace": {
+       "expire": true,
+       "refresh": false,
+       "desc": "Permanent cache for the universe ID of a given place. 'Start Place' should never change; only disable if you intend to frequently change the game of 'Other Places' in your universe (very unlikely)."
      }
   }
 }
