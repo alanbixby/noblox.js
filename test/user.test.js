@@ -303,6 +303,7 @@ describe('User Methods', () => {
     return getPlayerInfo(55549140).then((res) => {
       return expect(res).toMatchObject({
         username: expect.any(String),
+        displayName: expect.any(String),
         status: expect.any(String),
         blurb: expect.any(String),
         joinDate: expect.any(Date),
