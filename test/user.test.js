@@ -304,7 +304,6 @@ describe('User Methods', () => {
       return expect(res).toMatchObject({
         username: expect.any(String),
         displayName: expect.any(String),
-        status: expect.any(String),
         blurb: expect.any(String),
         joinDate: expect.any(Date),
         age: expect.any(Number),
@@ -328,12 +327,6 @@ describe('User Methods', () => {
           })
         ])
       )
-    })
-  })
-
-  it('getStatus() returns a player\'s status', () => {
-    return getStatus(55549140).then((res) => {
-      return expect(res).toEqual(expect.any(String))
     })
   })
 
