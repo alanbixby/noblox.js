@@ -855,18 +855,6 @@ type DeveloperProductAddResult = {
 
 /**
  * @typedef
-*/
-type CheckDeveloperProductNameResult = {
-    Success: boolean;
-    /**
-     * When success is true: "Name available"
-     * When success is false, you can get: "Product name already exists"
-     */
-    Message: string;
-}
-
-/**
- * @typedef
  */
 type GamePassData = {
     id: number;
